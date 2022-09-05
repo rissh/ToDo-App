@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="./firebase.js"></script>    
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- Background image section html start -->
+    <div class="background-image">
+        <img src="/assets/bg-desktop-dark.jpg">
+    </div>
+    <!-- Background image section html end -->
+    <!-- Main website html section start -->
+    <div class="container"> 
+        <!-- Header section html start -->
+        <div class="header">
+            <div class="title">
+                TODO
+            </div>
+            <div class="theme-logo">
+                <img src="/assets/icon-sun.svg">
+            </div>
+        </div>
+        <!-- Header section html end -->
+        <!---->
+        <div class="new-todo">
+            <div class="check">
+                <div class="check-mark">
+                </div>
+            </div>
+            <div class="new-todo-input">
+                <form onsubmit="addItem(event)">
+                    <input id="todo-input" type="text" placeholder="Create a new todo...">
+                </form>
+            </div>
+        </div>
+        <!---->
+        <!-- TODO list section html start -->
+        <div class="todo-items-container">
+            <!-- TODO list item section html start -->
+            <div class="todo-items">
+                <div class="todo-item">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="/assets/icon-check.svg">
+                        </div>
+                    </div>
+                    <div class="todo-text">
+                        JNEC SUCKS
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="/assets/icon-check.svg">
+                        </div>
+                    </div>
+                    <div class="todo-text">
+                        JNEC SUCKS
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <div class="check">
+                        <div class="check-mark">
+                            <img src="/assets/icon-check.svg">
+                        </div>
+                    </div>
+                    <div class="todo-text">
+                        JNEC SUCKS
+                    </div>
+                </div>
+            </div>
+            <!-- TODO list item section html end -->
+            <!-- Footer section html start -->
+            <div class="todo-items-info">
+                <div class="items-left">
+                    5 items left
+                </div>
+                <div class="item-status">
+                    <span class="active">All</span>
+                    <span>Active</span>
+                    <span>Completed</span>
+                </div>
+                <div class="items-clear">
+                    <span>Clear Completed</span>
+                </div>
+            </div>
+            <!-- Footer section html end -->
+        </div>
+        <!-- TODO list section html end -->
+    </div>
+    <!-- Main website section end -->
+</body>
+</html>
